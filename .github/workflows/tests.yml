@@ -12,3 +12,8 @@ jobs:
           python-version: '3.11'
       - run: python -m pip install -e '.[dev]'
       - run: python -m pytest -q
+      - name: Run the offline example
+        run: |
+          python scripts/make_synthetic.py
+          python -m otrader.data.anonymize
+          python -m otrader.runner --backend stub --run-id demo --days 3

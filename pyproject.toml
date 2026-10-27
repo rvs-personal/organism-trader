@@ -19,8 +19,8 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-cursor = ["cursor-sdk"]
-dev = ["pytest"]
+cursor = ["cursor-sdk==1.0.31"]
+dev = ["pytest", "cursor-sdk==1.0.31"]
 
 [project.scripts]
 otrader = "otrader.cli:app"
