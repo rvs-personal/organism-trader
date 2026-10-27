@@ -6,11 +6,11 @@
 *.pem
 *.key
 # Generated data and private run records
-data/
-runs/
-analysis/
-exports/
-notebooks/
+/data/
+/runs/
+/analysis/
+/exports/
+/notebooks/
 *.sqlite*
 *.db
 *.log
