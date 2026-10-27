@@ -1,0 +1,27 @@
+# Private local configuration
+.env
+.env.*
+!.env.example
+.dev.vars*
+*.pem
+*.key
+# Generated data and private run records
+data/
+runs/
+analysis/
+exports/
+notebooks/
+*.sqlite*
+*.db
+*.log
+# Python build and test files
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.coverage
+htmlcov/
+.DS_Store

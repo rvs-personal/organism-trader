@@ -1,0 +1,37 @@
+[project]
+name = "otrader"
+version = "0.1.0"
+description = "Persistent AI trading organisms on simulated NSE equities (personal experiment)"
+requires-python = ">=3.10"
+dependencies = [
+  "pandas>=2.0",
+  "pyarrow>=15",
+  "numpy",
+  "pydantic>=2",
+  "pyyaml",
+  "yfinance>=0.2.40",
+  "jugaad-data",
+  "httpx",
+  "streamlit",
+  "plotly",
+  "typer",
+  "rich",
+]
+
+[project.optional-dependencies]
+cursor = ["cursor-sdk"]
+dev = ["pytest"]
+
+[project.scripts]
+otrader = "otrader.cli:app"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

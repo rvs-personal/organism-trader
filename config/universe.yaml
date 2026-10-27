@@ -1,0 +1,35 @@
+# 30 liquid NSE large caps. Yahoo suffix .NS is added by the loader.
+# The fetch step validates each ticker and drops failures (see data/raw/fetch_report.json).
+index: "^NSEI"
+vix: "^INDIAVIX"
+stocks:
+  - {symbol: RELIANCE,   sector: Energy}
+  - {symbol: ONGC,       sector: Energy}
+  - {symbol: NTPC,       sector: Power}
+  - {symbol: POWERGRID,  sector: Power}
+  - {symbol: HDFCBANK,   sector: Banks}
+  - {symbol: ICICIBANK,  sector: Banks}
+  - {symbol: SBIN,       sector: Banks}
+  - {symbol: AXISBANK,   sector: Banks}
+  - {symbol: KOTAKBANK,  sector: Banks}
+  - {symbol: BAJFINANCE, sector: NBFC}
+  - {symbol: INFY,       sector: IT}
+  - {symbol: TCS,        sector: IT}
+  - {symbol: HCLTECH,    sector: IT}
+  - {symbol: WIPRO,      sector: IT}
+  - {symbol: TECHM,      sector: IT}
+  - {symbol: ITC,        sector: FMCG}
+  - {symbol: HINDUNILVR, sector: FMCG}
+  - {symbol: NESTLEIND,  sector: FMCG}
+  - {symbol: LT,         sector: Industrials}
+  - {symbol: ULTRACEMCO, sector: Materials}
+  - {symbol: TATASTEEL,  sector: Metals}
+  - {symbol: JSWSTEEL,   sector: Metals}
+  - {symbol: MARUTI,     sector: Autos}
+  - {symbol: "M&M",      sector: Autos}
+  - {symbol: TATAMOTORS, sector: Autos}     # ticker may have changed post-demerger; fetch validates
+  - {symbol: SUNPHARMA,  sector: Pharma}
+  - {symbol: BHARTIARTL, sector: Telecom}
+  - {symbol: TITAN,      sector: Consumer}
+  - {symbol: ASIANPAINT, sector: Consumer}
+  - {symbol: ADANIENT,   sector: Conglomerate}
